@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
+.bg-image {
+    background-image: url("assets/img/Background.jpg");
+    filter: blur(8px);
+
+    -webkit-filter: blur(3px);
+    height: 90%;
+    width: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    padding: 20px;
+    font-family: Arial;
+    background-color:rgb(230, 230, 230);
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+.header {
+    font-size: large;
+    color: black;
+
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: rgb(250, 219, 219);
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
